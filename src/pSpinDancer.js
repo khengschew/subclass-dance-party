@@ -5,11 +5,11 @@ var MakePSpinDancer = function(top, left, timeBetweenSteps) {
 MakePSpinDancer.prototype = Object.create(MakePulseDancer.prototype);
 MakePSpinDancer.prototype.constructor = MakePSpinDancer;
 
-MakePSpinDancer.prototype.oldStep = MakePSpinDancer.prototype.step;
+MakePSpinDancer.prototype.pulseStep = MakePSpinDancer.prototype.step;
 
 MakePSpinDancer.prototype.step = function() {
-  this.oldStep();
+  this.pulseStep();
 
   // Placeholder animation
-  this.$node.toggle();
+  // this.$node.toggle();
 };

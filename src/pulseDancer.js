@@ -7,10 +7,10 @@ var MakePulseDancer = function(top, left, timeBetweenSteps) {
 MakePulseDancer.prototype = Object.create(MakeDancer.prototype);
 MakePulseDancer.prototype.constructor = MakePulseDancer;
 
-MakePulseDancer.prototype.oldStep = MakePulseDancer.prototype.step;
+MakePulseDancer.prototype.baseStep = MakePulseDancer.prototype.step;
 
 MakePulseDancer.prototype.step = function() {
-  this.oldStep();
+  this.baseStep();
 
   // Placeholder animation
   // Intended animation is to pulse dancer using @keyframes(?)
