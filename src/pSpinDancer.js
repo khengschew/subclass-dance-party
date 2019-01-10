@@ -9,6 +9,8 @@ MakePSpinDancer.prototype.pulseStep = MakePSpinDancer.prototype.step;
 
 MakePSpinDancer.prototype.step = function() {
   this.pulseStep();
+  this.$node.css('border-color', 'green');
+  this.$node.css('border-radius', '0px');
 
   // Placeholder animation
   // this.$node.toggle();
