@@ -9,9 +9,8 @@ MakePSpinDancer.prototype.pulseStep = MakePSpinDancer.prototype.step;
 
 MakePSpinDancer.prototype.step = function() {
   this.pulseStep();
-  this.$node.css('border-color', 'green');
-  this.$node.css('border-radius', '0px');
+  
+  this.$node = this.addImg('img/bill.png');
 
-  // Placeholder animation
-  // this.$node.toggle();
+  this.animSet('rotate ' + Math.max(this.timeBetweenSteps, 250) * 2 / 1000 + 's linear infinite');
 };

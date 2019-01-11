@@ -3,13 +3,16 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /*background-color:#444;*/
+  background-image: url(https://cdn.dribbble.com/users/4467/screenshots/1570803/beach-party.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineUpButton{
   padding:5px 12px;
   float:right;
 }
@@ -27,10 +30,20 @@ body, a:link, a:visited, a:active{
 }
 
 @keyframes pulse {
-/*  0% {height:100%; width:100%;}
-  50% {height:125%; width:125%;}
-  100% {height:100%; width:100%;}*/
-  0% {transform:scale(1);}
-  50% {transform:scale(2);}
-  100% {transform:scale(1);}
+/*  0% {height:scale(1); width:scale(1);}
+  50% {height:scale(2); width:scale(2);}
+  100% {height:scale(1); width:scale(1);}*/
+/*  0% {border-radius:10px;}
+  50% {border-radius:0px;}
+  100% {border-radius:10px;}*/
+  0% {transform:scale(0.25);}
+  50% {transform:scale(0.5);}
+  100% {transform:scale(0.25);}
+}
+
+@keyframes rotate {
+  from {transform:rotate(0deg);}
+  40% {transform:rotate(-50deg);}
+  80% {transform:rotate(0deg);}
+  to {transform:rotate(0deg);}
 }
