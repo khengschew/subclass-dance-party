@@ -13,6 +13,7 @@ MakePulseDancer.prototype.step = function() {
     border: 'none'
   };
   this.$node.css(cssValues);
+  this.$node.addClass('football');
 
   this.$node = this.addImg('img/fb.png');
 

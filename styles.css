@@ -29,6 +29,10 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.football{
+  transition: all 0.5s linear;
+}
+
 @keyframes pulse {
 /*  0% {height:scale(1); width:scale(1);}
   50% {height:scale(2); width:scale(2);}
